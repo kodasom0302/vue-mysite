@@ -6,6 +6,10 @@ import JoinFormView from '@/views/user/JoinFormView.vue'
 import JoinOkView from '@/views/user/JoinOkView.vue'
 import AttachResultView from '@/views/attach/AttachResultView.vue'
 import AttachFormView from '@/views/attach/AttachFormView.vue'
+import ListView from '@/views/board/ListView.vue'
+import ReadView from '@/views/board/ReadView.vue'
+import ModifyFormView from '@/views/board/ModifyFormView.vue'
+import WriteFormView from '@/views/board/WriteFormView.vue'
 
 const routes = [
   {
@@ -42,6 +46,26 @@ const routes = [
     path: '/attach/result',
     name: '/attach/result',
     component: AttachResultView
+  },
+  {
+    path: '/board/list',
+    name: '/board/list',
+    component: ListView
+  },
+  {
+    path: '/board/read/:no',
+    name: '/board/read',
+    component: ReadView
+  },
+  {
+    path: '/board/modify/:no',
+    name: '/board/modify',
+    component: ModifyFormView
+  },
+  {
+    path: '/board/writeform',
+    name: '/board/writeform',
+    component: WriteFormView
   },
 ]
 
